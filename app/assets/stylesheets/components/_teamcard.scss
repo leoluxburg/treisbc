@@ -1,0 +1,76 @@
+.cardteam {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #23405B;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #23405B;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.teaminfo{
+  background-color: #23405B;
+  color: white;
+  height: 500px;
+  width: 300px;
+}
+
+#f1_container {
+  position: relative;
+  margin-bottom: 250px;
+  margin-left: 45px;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+
+}
