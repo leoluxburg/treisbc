@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   get '/team', to: 'pages#team'
   get '/contact', to: 'pages#contact'
   get '/company', to: 'pages#company'
-  get '/new', to: 'pages#new'
-
+  get '/greers-treis-blockchain', to: 'pages#new'
+  get '/sandbox', to: 'pages#sandbox'
+  get '/digital-gold', to: 'pages#new2'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

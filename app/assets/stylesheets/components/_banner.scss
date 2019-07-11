@@ -5,6 +5,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 80px;
 }
 
 .banner h1 {
@@ -22,10 +23,6 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 .section {
-  /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   height: 100vh;
-
-
 }
